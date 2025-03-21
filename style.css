@@ -1,38 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Сброс отступов и полей */
+body, html {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f1f2f3;
+}
+
+/* Контейнер для ввода пароля */
+#login-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#login-container input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#login-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#error-message {
+    margin-top: 10px;
+}
+
+/* Основной контент */
+#content-container {
+    display: none;
+    padding: 20px;
+    background-color: #f1f2f3;
+}
+
+#session-timer {
+    font-size: 30px;
+    position: sticky;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    background-color: #af8dd1;
+    padding: 10px;
+    border-radius: 50px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto
 }
 
 .logo {
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .logo img {
-    max-width: 200px;
+    max-width: 30%;
     height: auto;
 }
 
-.lessons-list {
-    background-color: #fff;
+/* Контейнер для видео */
+.video-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 90%;
-    max-width: 600px;
-    margin: 20px 0;
+    box-sizing: border-box;
 }
 
-.lessons-list h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#video-iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* Список уроков */
+.lessons-list {
+    margin-top: 20px;
+    text-align: center;
 }
 
 .lessons-list ul {
@@ -40,43 +97,33 @@ body {
     padding: 0;
 }
 
-.lessons-list ul li {
-    margin: 10px 0;
+.lessons-list li {
     cursor: pointer;
-    color: #007bff;
-    text-decoration: underline;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%;
+    max-width: 600px;
 }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px 0;
+.lessons-list li:hover {
+    background-color: #e9e9e9;
 }
 
-.video-container {
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-iframe {
-    width: 100%;
-    height: 500px;
-    border-radius: 8px;
-}
-
+/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
-    iframe {
+    .video-container {
+        max-width: 100%;
+    }
+
+    #video-iframe {
         height: 300px;
     }
-}
 
-@media (max-width: 480px) {
-    iframe {
-        height: 200px;
+    .lessons-list li {
+        width: 100%;
     }
 }

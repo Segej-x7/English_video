@@ -18,5 +18,13 @@ const videos = [
     {
         title: "Урок № 5",
         src: "https://drive.google.com/file/d/1jvURnTjz73bcj5pXNk_NEzcG11K3iYUE/preview"
+    },
+       {
+        title: "Урок № 6",
+        src: "https://drive.google.com/file/d/12mYsC0f9CeTQaFKR8mY70rD2w5lZnBEK/preview"
+    },
+    {
+        title: "Урок № 7",
+        src: "https://drive.google.com/file/d/1qqidEyOlfD8x4wt77zni58VHAmlzuO17/preview"
     }
 ];
