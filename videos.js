@@ -29,14 +29,14 @@ const videos = [
     },
     {
         title: "Урок № 8",
-        youtube: "https://www.youtube.com/embed/-VaWSZk0Wzw"
+        src: "https://drive.google.com/file/d/1AGtayLaDlRnER3FNCw-r7IiNM8II_JZg/preview"
     },
     {
         title: "Урок № 9",
-        youtube: "https://www.youtube.com/embed/jLguuGR53Fg"
+        src: "https://drive.google.com/file/d/1Vcfk13yzYd3JkQ_a0jptFgJDGaj2sLd8/preview"
     },
     {
         title: "Урок № 10",
-        youtube: "https://www.youtube.com/embed/vWVdiJduI-Q"
+        src: "https://www.youtube.com/embed/vWVdiJduI-Q"
     },
 ];
