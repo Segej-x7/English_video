@@ -10,7 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
         li.textContent = video.title;
         li.addEventListener("click", () => {
             lessonTitle.textContent = video.title;
-            videoIframe.src = video.src;
+            
+            // Определяем тип видео (Google Drive или YouTube)
+            if (video.youtube) {
+                // Если есть YouTube ссылка, используем её
+                videoIframe.src = video.youtube;
+            } else if (video.src) {
+                // Иначе используем Google Drive ссылку
+                videoIframe.src = video.src;
+            }
+            
             videoContainer.style.display = "block";
         });
         lessonsList.appendChild(li);

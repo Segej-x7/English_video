@@ -26,5 +26,17 @@ const videos = [
     {
         title: "Урок № 7",
         src: "https://drive.google.com/file/d/1qqidEyOlfD8x4wt77zni58VHAmlzuO17/preview"
-    }
+    },
+    {
+        title: "Урок № 8",
+        youtube: "https://www.youtube.com/embed/-VaWSZk0Wzw"
+    },
+    {
+        title: "Урок № 9",
+        youtube: "https://www.youtube.com/embed/jLguuGR53Fg"
+    },
+    {
+        title: "Урок № 10",
+        youtube: "https://www.youtube.com/embed/vWVdiJduI-Q"
+    },
 ];
